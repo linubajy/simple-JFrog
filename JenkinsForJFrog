@@ -19,7 +19,7 @@ pipeline {
           steps 
           {
               
-              sh 'mvn clean'
+              bat 'mvn clean'
                  
            }
         }
@@ -27,8 +27,8 @@ pipeline {
       {
           steps 
           {
-              sh 'echo Compile'
-              sh 'mvn compile'
+              bat 'echo "Compile"'
+              bat 'mvn compile'
                  
            }
         }
@@ -36,8 +36,8 @@ pipeline {
       {
           steps 
           {
-              sh 'echo Build'
-              sh 'mvn  package'
+              bat 'echo "Build"'
+              bat 'mvn package'
                  
            }
         }
